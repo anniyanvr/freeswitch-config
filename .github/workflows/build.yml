@@ -51,7 +51,7 @@ jobs:
             ${{ runner.os }}-${{ env.APP_IDENTIFIER }}-
 
       - name: Build and push to AWS ECR `${{ env.APP_IDENTIFIER }}`
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v2.4.0
         with:
           context: .
           push: true
